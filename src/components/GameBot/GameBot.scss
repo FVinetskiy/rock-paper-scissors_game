@@ -1,0 +1,70 @@
+.GameBot {
+  margin: 0 auto;
+  max-width: 550px;
+  display: flex;
+  width: 100%;
+  min-height: 324px;
+  &__item {
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__result {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    border: 20px solid transparent;
+    margin: 6px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--icon-rock {
+      border-color: hsl(39, 89%, 49%);
+    }
+    &--icon-scissors {
+      border-color: hsl(230, 89%, 62%);
+    }
+    &--icon-lizard {
+      border-color: hsl(349, 71%, 52%);
+    }
+    &--icon-paper {
+      border-color: hsl(261, 73%, 60%);
+    }
+    &--icon-spock {
+      border-color: hsl(189, 59%, 53%);
+    }
+    &.loading {
+      background: linear-gradient(
+        -45deg,
+        #ee7752,
+        #e73c7e,
+        #23a6d5,
+        #23d5ab
+      );
+      animation: gradient 3s ease infinite;
+      background-repeat: no-repeat;
+      border-color: hsl(229, 64%, 46%);
+      
+    }
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+    transform: rotate(0deg);
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+    transform: rotate(360deg);
+  }
+}

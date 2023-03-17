@@ -1,0 +1,34 @@
+.game {
+  margin: 0 auto;
+  max-width: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__button {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    border: 20px solid transparent;
+    margin: 6px;
+    &--icon-rock {
+      border-color: hsl(39, 89%, 49%);
+      transform: translate(24px, 10px);
+    }
+    &--icon-scissors {
+      border-color: hsl(230, 89%, 62%);
+      transform: translate(0, -80px);
+    }
+    &--icon-lizard {
+      border-color: hsl(349, 71%, 52%);
+      transform: translate(-24px, 10px);
+    }
+    &--icon-paper {
+      border-color: hsl(261, 73%, 60%);
+    }
+    &--icon-spock {
+      border-color: hsl(189, 59%, 53%);
+    }
+  }
+}
