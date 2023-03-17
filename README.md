@@ -5,7 +5,7 @@
 
 ##### Not sure what Rock, Paper, Scissors, Lizard, Spock is?
 
-[Check out this clip from The Big Bang Theory.](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+<a href="https://www.youtube.com/watch?v=iSHPVCBsnLw" target="_blank">Check out this clip from The Big Bang Theory.</a>
 
 ### `how to start a project`
 
