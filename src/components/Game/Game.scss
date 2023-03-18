@@ -12,23 +12,36 @@
     padding: 0;
     border: 20px solid transparent;
     margin: 6px;
-    &--icon-rock {
+    &--rock {
       border-color: hsl(39, 89%, 49%);
       transform: translate(24px, 10px);
     }
-    &--icon-scissors {
+    &--scissors {
       border-color: hsl(230, 89%, 62%);
       transform: translate(0, -80px);
     }
-    &--icon-lizard {
+    &--lizard {
       border-color: hsl(349, 71%, 52%);
       transform: translate(-24px, 10px);
     }
-    &--icon-paper {
+    &--paper {
       border-color: hsl(261, 73%, 60%);
     }
-    &--icon-spock {
+    &--spock {
       border-color: hsl(189, 59%, 53%);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .game {
+    margin-bottom: 40px;
+    &__button {
+      width: 100px;
+      height: 100px;
+      &--scissors {
+        transform: translate(0, -52px);
+      }
     }
   }
 }

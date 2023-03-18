@@ -10,33 +10,35 @@ type Ibutton = {
 const SelectsPlay: Ibutton[] = [
   {
     id: 1,
-    src: 'icon-rock',
+    src: 'rock',
   },
   {
     id: 2,
-    src: 'icon-scissors',
+    src: 'scissors',
   },
   {
     id: 3,
-    src: 'icon-lizard',
+    src: 'lizard',
   },
   {
     id: 4,
-    src: 'icon-paper',
+    src: 'paper',
   },
   {
     id: 5,
-    src: 'icon-spock',
+    src: 'spock',
   },
 ];
 
 type GameProps = { myChoice: Function };
 
 const Game: FC<GameProps> = ({ myChoice }) => {
+  
+
   return (
     <div className="game">
       {SelectsPlay.map((item) => {
-        const srcSvg = `${item.src}.svg`;
+        const srcSvg = `icon-${item.src}.svg`;
         return (
           <button
             onClick={() => myChoice(item.src)}
